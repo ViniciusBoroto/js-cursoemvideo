@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Contador</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        Vamos contar
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="start">Início: </label>
+                <input type="number" id="start">
+            </p>
+            <p>
+                <label for="end">Fim: </label>
+                <input type="number" id="end">
+            </p>
+            <p>
+                <label for="step">Passo: </label>
+                <input type="number" id="step">
+            </p>
+            <p>
+                <input type="button" id="contarBtn" value="Contar" onclick="counting()">
+            </p>
+        </div>
+        <div id="resDiv">
+            Preparando a contagem...
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Vezin</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

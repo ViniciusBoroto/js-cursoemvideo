@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventons DOM</title>
+    <style>
+        body {
+            background-color: rgb(43, 41, 41);
+            color: rgb(207, 202, 202);
+        }
+        div#area {
+            font: normal 25pt Trebuchet MS;
+            background-color: red;
+            color: rgb(207, 202, 202);
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            margin-left: 150px;
+            
+            line-height: 200px;
+            text-align: center;
+            /*color: rgb(161, 161, 243)*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()" onmouseenter="mouseEnter()" onmouseout="mouseOut()">
+        interaja
+    </div>
+        <script>
+            let area = document.querySelector('div#area')
+            
+            function click() {
+                
+                area.innerText = 'Clicou'
+                area.style.color = 'green'
+                area.style.background = 'rgb(161, 161, 243)'
+            }
+            function mouseEnter() {
+                area.style.color = 'rgb(161, 161, 243)'
+            }
+            function mouseOut() {
+                area.style.color = 'white'
+                area.innerText = 'interaja'
+                area.style.background = 'red'
+            }
+                area.addEventListener('click', click)
+                area.addEventListener('mouseenter', mouseEnter)
+                area.addEventListener('mouseout', mouseOut)
+        </script>
+</body>
+</html>

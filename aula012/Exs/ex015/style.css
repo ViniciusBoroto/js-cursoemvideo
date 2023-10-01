@@ -1,0 +1,28 @@
+body {
+    background: rgb(34, 34, 34);
+    font: normal 20pt Trebuchet MS;
+    color: rgb(206, 206, 206);
+
+}
+
+header {
+    margin: auto;
+    text-align: center;
+    font: bold 40pt Trebuchet MS;
+}
+
+section {
+    background: rgb(206, 206, 206);
+    color: rgb(34, 34, 34);
+    border-radius: 23px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 6px 6px 12px rgb(0, 0, 0);
+    
+}
+
+footer {
+    text-align: center;
+}

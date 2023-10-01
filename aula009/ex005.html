@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste DOM</title>
+    <style>
+        body {
+            background-color: rgb(33, 33, 34);
+            font: normal 25pt Trebuchet MS;
+        }
+        h1 {
+            color: rgb(212, 52, 52)
+        }
+        p {
+            color: rgb(201, 198, 198);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="tit">Olá Mundo</h1>
+    <p>Resultado</p>
+    <div></div>
+
+    <script>
+        let tit = document.querySelector("h1#tit")
+        tit.innerText = 'Hello'
+    </script>
+</html>

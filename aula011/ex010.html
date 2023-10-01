@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de maioridade</title>
+
+    <style>
+        body {
+            background-color: rgb(48, 47, 47);
+            color: rgb(231, 231, 231);
+            font: normal 18pt Trebuchet MS;
+        }
+        input {
+            width: 50px;
+            height: 25px;
+        }
+        input#verify {
+            width: 65px;
+        }
+        div#res {
+            margin-top: 15px;
+            background-color: rgb(133, 89, 39);
+            width: 250px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Vamos verificar se você é maior de idade</h1>
+    <p>Insira a sua idade:</p>
+    <input type="number" id="age">
+    <input type="button" id="verify" value="Verificar">
+    <div id="res"></div>
+
+    <script>
+        let inputAge = document.querySelector('input#age')
+        let buttonVerify = document.querySelector('input#verify')
+        let divRes = document.querySelector('div#res')
+
+        
+        function verifyclick() {
+            let age = Number(inputAge.value)
+            if (age > 18) {
+                divRes.innerHTML = 'Você é <strong>maior</strong> de idade'
+                
+            } else {
+                divRes.innerHTML = 'Você é <strong id = "strgMenorMaior">menor</strong> de idade'
+            }
+            body.style.background = rgb(48, 47, 47);
+
+        }
+        buttonVerify.addEventListener('click', verifyclick)
+
+    </script>
+</body>
+</html>
